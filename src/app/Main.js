@@ -2,43 +2,45 @@
  * In this file, we create a React component
  * which incorporates components provided by Material-UI.
  */
-import React, {Component} from 'react';
+import React, {Component} from "react"
 import Dialog, {
   DialogActions,
   DialogContent,
   DialogContentText,
   DialogTitle,
-} from 'material-ui/Dialog';
-import Button from 'material-ui/Button';
-import Slide from 'material-ui/transitions/Slide';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+} from "material-ui/Dialog"
+import Button from "material-ui/Button"
+import Slide from "material-ui/transitions/Slide"
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider"
 
 const styles = {
   container: {
-    textAlign: 'center',
-    paddingTop: 200,
-  },
-};
+    textAlign: "center",
+    paddingTop: 200
+  }
+}
 
 class Main extends Component {
   constructor(props, context) {
-    super(props, context);
+    super(props, context)
 
     this.state = {
-      open: false,
-    };
+      open: false
+    }
+    this.handleRequestClose = this.handleRequestClose.bind(this)
+    this.handleTouchTap = this.handleTouchTap.bind(this)
   }
 
-  handleRequestClose = () => {
+  handleRequestClose() {
     this.setState({
-      open: false,
-    });
+      open: false
+    })
   }
 
-  handleTouchTap = () => {
+  handleTouchTap() {
     this.setState({
-      open: true,
-    });
+      open: true
+    })
   }
 
   render() {
@@ -69,8 +71,8 @@ class Main extends Component {
           >Super Secret Password</Button>
         </div>
       </MuiThemeProvider>
-    );
+    )
   }
 }
 
-export default Main;
+export default Main
