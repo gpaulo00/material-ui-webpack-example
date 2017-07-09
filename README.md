@@ -1,18 +1,18 @@
 # [Material-UI](https://github.com/callemall/material-ui) - Example Webpack Project
 
-This is an example project that uses [Material-UI](https://github.com/callemall/material-ui).
+This is an example project that uses [Material-UI](https://github.com/callemall/material-ui) (using material-ui@next).
 
 ## Installation
 
 After cloning the repository, install dependencies:
 ```sh
 cd <project folder>/material-ui/examples/webpack-example
-npm install
+yarn install
 ```
 
 Now you can run your local server:
 ```sh
-npm start
+yarn run start
 ```
 Server is located at http://localhost:3000
 
