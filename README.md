@@ -1,12 +1,18 @@
-# [Material-UI](https://github.com/callemall/material-ui) - Example Webpack Project
+# Material-UI Example Project
+This is an example project that uses Material-UI pre-release with Webpack as bundler.
 
-This is an example project that uses [Material-UI](https://github.com/callemall/material-ui) (using material-ui@next).
+## Tools
+* [Yarn](https://github.com/yarnpkg/yarn) as package manager
+* [Webpack](https://github.com/webpack/webpack) 3.1 (with configuration files)
+* [webpack-dev-server](https://github.com/webpack/webpack-dev-server) (configured for development)
+* [React](https://github.com/facebook/react) and [Material-UI](https://github.com/callemall/material-ui) (pre-release)
+* [ESLint](https://github.com/eslint/eslint)
 
 ## Installation
 
 After cloning the repository, install dependencies:
 ```sh
-cd <project folder>/material-ui/examples/webpack-example
+cd <project folder>
 yarn install
 ```
 
